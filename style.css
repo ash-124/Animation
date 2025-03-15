@@ -7,11 +7,36 @@
 html , body{
     height: 100%;
     width: 100%;
-    background-color: #111;
+    
 }
+
+body{
+    background-color: #111;
+    padding: 20px;
+}
+
 #box{
     width: 100px;
     height: 100px;
     background-color: cadetblue;
     border-radius: 16px;
+    position: relative;
+    animation-name: rotateMove;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+
+}
+
+
+@keyframes rotateMove {
+    from{
+        top:0;
+        left: 0;
+        rotate: 0;
+    }to{
+        top: 50%;
+        left: 85%;
+        rotate: 360deg;
+        background-color: #111;
+    }
 }
