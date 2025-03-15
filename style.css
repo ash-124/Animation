@@ -21,22 +21,32 @@ body{
     background-color: cadetblue;
     border-radius: 16px;
     position: relative;
-    animation-name: rotateMove;
-    animation-duration: 2s;
+    animation-name: rotateMoveCirculer;
+    animation-duration: 4s;
     animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
 }
 
-
-@keyframes rotateMove {
-    from{
-        top:0;
+@keyframes rotateMoveCirculer {
+    0%{
         left: 0;
-        rotate: 0;
-    }to{
+        top:0;
+        
+    }25%{
+        left: 80%;
+        top: 0;
+        background-color: #fff;
+    }75%{
+        left: 80%;
         top: 50%;
-        left: 85%;
+        background-color: crimson;
+    }100%{
+        left:0;
+        top:50%;
         rotate: 360deg;
-        background-color: #111;
     }
 }
