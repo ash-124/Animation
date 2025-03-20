@@ -26,6 +26,27 @@ body{
     color:aliceblue;
     
 }
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border-radius: 16px;
+    position: relative;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(95, 146, 160, 0.295);
+    border-radius: 32px;
+    position: relative;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(150, 95, 160, 0.455);
+    border-radius: 6.px;
+    position: relative;
+}
 
 @keyframes rotateMoveCirculer {
     0%{
