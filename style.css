@@ -21,8 +21,10 @@ body{
     background-color: cadetblue;
     border-radius: 16px;
     position: relative;
+}
+#text{
+    color:aliceblue;
     
-
 }
 
 @keyframes rotateMoveCirculer {
