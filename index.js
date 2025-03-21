@@ -1,3 +1,11 @@
+
+const element = document.querySelector('[data-scroll-container]');
+const scroll = new LocomotiveScroll({
+    el:element,
+    smooth:true,
+    lerp:0.1
+})
+
 const tl = gsap.timeline();
 
 gsap.to('#box',{
@@ -52,30 +60,33 @@ gsap.from('#text h2', {
 // animation with scrolltrigger;
 
 gsap.from('#page2 .box2',{
+    
     scale:0,
     rotate:-360,
     duration:1,
     scrollTrigger:{
         trigger:'#page2 .box2',
         scroller:'body',
-        markers:true,
         start:'top 50%',
         end:'top 40%',
         scrub:4,
         pin:true
     }
 })
-gsap.from('#page3 .box3',{
-    scale:0,
-    rotate:-360,
-    duration:1,
-    delay:1,
+gsap.from('#page3 .box3', {
+    opacity:0,
+    x:200,
+    rotate:360,
+    duration:2,
+    scrollTrigger:{
+        trigger: '#page3 .box3',
+        scroller:'body',
+        start:'top 50%',
+        end:'top 20%',
+        scrub:3,
+
+    }
     
 })
-gsap.from('#page4 .box4',{
-    scale:0,
-    rotate:-360,
-    duration:1,
-    delay:1
-})
+
 
